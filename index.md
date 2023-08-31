@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Student Blog
+title: Bhouvanamohini-Vrnda Kanhye's Blog
+description: An intro to my time-boxing page :) 
 ---
 
+# Bhouvanamohini-Vrnda Kanhye's Blog
+Sophomore girl in a nighthawk world trying to grow and improve along the way! 
 
-# Bhouvanamohini-Vrnda Kanhye's Blog B>
-Sophomore girl in a nighthawk world trying to grow and improve along the way! Wippee!
-
-# Bits about mEE:
-> My freeform photo:
+## Bits about me:
+> ### My freeform photo:
 ![bvk csse 1 form photo](/images/bvk_csse_1_form_drawing_1.jpg)
 
-> Academic background
+> ### Academic background
 - 10th grader, class of 2026
 - Schedule:
   - Tri 1: 
