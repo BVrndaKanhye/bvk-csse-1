@@ -5,7 +5,7 @@ description: An intro to my time-boxing page :)
 ---
 
 # Bhouvanamohini-Vrnda Kanhye's Blog
-Sophomore girl in a nighthawk world trying to grow and improve along the way! 
+
 
 ## Bits about me:
 > ### My freeform photo:
