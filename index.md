@@ -9,7 +9,7 @@ description: An intro to my time-boxing page :)
 
 ## Bits about me:
 > ### My freeform photo:
-![bvk csse 1 form photo](/images/bvk_csse_1_form_drawing_1.jpg)
+![bvk csse 1 form photo](/images/bvk_csse_1_form_drawing_1.jpg) 
 
 > ### Academic background
 - 10th grader, class of 2026
