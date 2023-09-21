@@ -1,13 +1,11 @@
 ---
-title: JS Calculator
+title: JS Four Function Calculator
 comments: true
-hide: true
+toc: true
 layout: default
 description: A common way to become familiar with a language is to build a calculator.  This calculator shows off button with actions.
-permalink: /techtalk/home_style
-categories: [C7.0]
-courses: { csse: {week: 2}, csp: {week: 2, categories: [2.C]}, csa: {week: 2} }
-type: ccc
+type: tangibles
+courses: {csse: {week: 4} }
 ---
 
 <!-- 
@@ -21,7 +19,6 @@ Hack 3: Implement 1 number operation (ie SQRT)
 HTML implementation of the calculator. 
 -->
 
-{% include nav_home.html %}
 
 <!-- 
     Style and Action are aligned with HRML class definitions
@@ -30,6 +27,47 @@ HTML implementation of the calculator.
     Background is credited to Vanta JS and is implemented at bottom of this page
 -->
 <style>
+  .calculator-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.calculator-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.calculator-output {
+    grid-column: span 4;
+    grid-row: span 1;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 24px;
+    border: 1px solid #000;
+    text-align: right;
+}
+.calculator-number {
+    background-color: #b861ff;
+    color: #000;
+}
+
+.calculator-operation {
+    background-color: #1ffff4;
+    color: #000;
+}
+
+.calculator-clear, .calculator-equals {
+    background-color: #e9ff1f;
+    color: #000;
+}
   .calculator-output {
     /* calulator output 
       top bar shows the results of the calculator;
@@ -74,6 +112,8 @@ HTML implementation of the calculator.
       <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
       <div class="calculator-equals">=</div>
+      <!--row 5-->
+      <div class="calculator-operation">/</div>
   </div>
 </div>
 
@@ -152,8 +192,12 @@ function calculate (first, second) { // function to calculate the result of the 
             result = first * second;
             break;
         case "/":
+          if (second != 0) {
             result = first / second;
-            break;
+          } else {
+            result = "Undefined";
+          }
+          break;
         default: 
             break;
     }
