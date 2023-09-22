@@ -22,3 +22,24 @@ courses: { csse: {week: 5} }
         </div>
     </div>
 </body>
+
+<script>
+    window.addEventListener('load', function () {
+        const canvas = document.getElementById('spriteContainer');  // sets the canvas as a variable by calling the canvas element from the HTML code, using the id we set
+        const ctx = canvas.getContext('2d'); // the getContext function is a given function within the canvas object. It allows us more functionality with the sprite image.
+
+        // constant variables used for sprite and canvas
+        const SPRITE_WIDTH = 160;
+        const SPRITE_HEIGHT = 144;
+        const SCALE_FACTOR = 2;
+        const FRAME_LIMIT = 48;
+        const FRAME_RATE = 15;
+
+        // sets canvas properties
+        canvas.width = SPRITE_WIDTH * SCALE_FACTOR;
+        canvas.height = SPRITE_HEIGHT * SCALE_FACTOR;
+
+        //more code will be placed here later
+    });
+
+</script>
