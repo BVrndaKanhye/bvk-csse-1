@@ -5,7 +5,6 @@ title: Example Sprite Animation (Doggy)
 description: An intro to sprite sheets for 2D game animation :0
 type: hacks
 courses: { csse: {week: 5} } 
-courses: { csse: {week: 5} } 
 ---
 
 <
