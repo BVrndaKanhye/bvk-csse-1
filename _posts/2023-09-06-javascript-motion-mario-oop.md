@@ -9,8 +9,6 @@ courses: { csse: {week: 6}, csp: {week: 13}, csa: {week: 3} }
 type: ccc
 ---
 
-{% include nav_home.html %}
-
 
 {% assign sprite_file = site.baseurl | append: page.image %}  <!--- Liquid concatentation --->
 {% assign hash = site.data.mario_metadata %}  <!--- Liquid list variable created from file containing mario metatdata for sprite --->
