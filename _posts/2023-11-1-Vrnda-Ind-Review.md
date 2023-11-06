@@ -107,7 +107,7 @@ How I wanna structure it:
 
 ### Week 3-4: Chicken and INTEGRATION
 
-#### Week 3 Issue:
+#### [Week 3 Issue](https://github.com/kaylale124/final-game/issues/3#issue-1956107581):
     - Change chicken placeholder to chicken image
     - Figure out how to customize chicken in game (?)
 
