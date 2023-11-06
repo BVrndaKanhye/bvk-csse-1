@@ -282,17 +282,22 @@ class Projectile {
 
 animate();
 ```` 
-
-3: Trying to replace my current bakground w/ our game background
-    - no tangible for reference because it wasn't committed 
     
 #### Failures -> Reasons/Solutions
     - 1+2: Chicken js file worked, projectile did not work (didn't show up on main file) -> didn't work on it enough (considering the diff thingd affecting it, correctly idendtifying things directly based on Mort's code) + original code wasn't accustomed for the game env/obj settings described in Mort's files that we used
-    - 3: Image wouldn't show up or nothing would -> calling background image source the wrong way
+    - 3: Image wouldn't show up or nothing would -> calling background image source the wrong way by just defining const image = image path
 
+## Trimester 1 Reflection (positive accomplishments)
+    - Learning some basics of how OOP functions
+    - A better strategy of committing small changes and testing oen thing at a time when coding
+    - Having two game objects correspond and having projectiles shoot with add event listeners 
 
-<!--
-````js
-code here
-````
--->
+## Memories <3
+    - Getting projectiles to look like eggs and shoot right before the review that week
+    - naming our chickens
+    - Planning in the long and short term together
+    - Being frustrated at code in harmony
+
+## Aims for Tri 2
+    - Growing more independent from ChatGPT
+    - Learning the basics of js to learn to code in it more fluently
