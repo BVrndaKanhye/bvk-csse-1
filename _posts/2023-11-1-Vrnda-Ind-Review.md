@@ -74,8 +74,10 @@ How I wanna structure it:
 
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
+        //to ensure the projectiles come in an array
         let projectiles = [];
 
+        // to have the projectile always get generated as the same image
         const projectileImage = new Image();
         projectileImage.src = "{{site.baseurl}}/images/egg-projectile.png";
 
@@ -110,20 +112,60 @@ How I wanna structure it:
     - Figure out how to customize chicken in game (?)
 
 #### What I did:
-    - Used help from ChatGPT on how to change the block into the chicken image
+    - MUCH trial and error w/ ChatGPT and the space invaders tutorial
+        - using an image source and calling on that + making it constant = chicken showing up on the screen
+        - had to add a lot of specifications to ensure the image would show up correctly, move, and go at the right speed/direction
+            - newPlayer part is there because the screen is technically constantly refreshing and addign a new frame w/ draw feature
 
 #### Code for reference:
-    - *Unavailable because I deleted that file before being aware I should've saved it for reference*
-    - Will explain in week 2 code
 
-#### Failures -> Reasons/Solutions
+```` js
+ //site.baseurl would be final-game
+const image = new Image();
 
-#### [Week 1 Issue](https://github.com/kaylale124/final-game/issues/1#issue-1933785897): 
-    - Make egg projectile 
+                image.src = "{{site.baseurl}}/images/whitechicken.png";
+                image.onload = () => {
+                    // After the image has loaded, update and draw the player
+                    this.image = image;
+                    this.width = 100;
+                    this.height = 100;
+                    this.draw();
+                };
+
+            draw() {
+                if (this.image) {
+                    ctx.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
+                }
+            }
+
+            update() {
+                this.draw();
+                this.position.x += this.velocity.x;
+            }
+
+        const defaultChickenImageSrc = "whitechicken.png"; // Default chicken image source
+       // have a space because that's what works ;-;
+        const player = new Player(defaultChickenImageSrc);
+
+        // Function to change the chicken image source
+        function changeChicken(imageSrc) {
+            player.image.src = imageSrc;
+        }
+
+        //keep no space so chicken shows up
+        constplayer = new Player();
+````
+
+#### Week 4 Issue
+    - FULL INTEGRATION!
+    - Make it so you can choose which chicken you play w/
 
 #### What I did:
-    - Used a [space invaders tutorial](https://www.youtube.com/watch?v=MCVU0w73uKI) to make a mini version of space invaders with a chicken placeholder + circular projectile using OOP
-        - I made a class Player and class Projectile to have two game objects appear on the screen
+    - Tried using ChatGPT to make my simplistic html file -> more advanced like Mr. Mort's code w/ the pulling og js files (didn't work out, extremely diff code)
+    - Then I tried...
+        1: Making separate js files for projectile and chicken, chicken being the monkey file (which everyone kept the same the rest of the integration phase)
+        2: Copy and pasting my code into one js file
+        3: Making chicken and projectile 
 
 #### Code for reference:
     - *Unavailable because I deleted that file before being aware I should've saved it for reference*
