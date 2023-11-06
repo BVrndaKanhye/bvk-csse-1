@@ -284,12 +284,11 @@ animate();
 ```` 
 
 3: Trying to replace my current bakground w/ our game background
-````js
-code here
-````
+    - no tangible for reference because it wasn't committed 
+    
 #### Failures -> Reasons/Solutions
     - 1+2: Chicken js file worked, projectile did not work (didn't show up on main file) -> didn't work on it enough (considering the diff thingd affecting it, correctly idendtifying things directly based on Mort's code) + original code wasn't accustomed for the game env/obj settings described in Mort's files that we used
-    - 3: Could
+    - 3: Image wouldn't show up or nothing would -> calling background image source the wrong way
 
 
 <!--
